@@ -1,0 +1,22 @@
+{
+  "name": "discordbitbucketwebhook",
+  "version": "1.0.0",
+  "description": "Translater for Bitbucket Webhook",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexanderHems/DiscordBitbucketWebhook.git"
+  },
+  "keywords": [
+    "Discord"
+  ],
+  "author": "Alexander Hems",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexanderHems/DiscordBitbucketWebhook/issues"
+  },
+  "homepage": "https://github.com/AlexanderHems/DiscordBitbucketWebhook#readme"
+}
