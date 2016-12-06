@@ -1,0 +1,263 @@
+WebhooksDiscord request logs
+Request details
+When an event in Bitbucket triggers a webhook, you can use the request details to figure out if something went wrong.
+To learn more about how webhooks work, check out the documentation.
+Resend request
+Type: repo:push
+Event time: a day ago (Monday, December 5th 2016, 1:44:03 pm)
+Request attempts: 3
+Attempt 1
+Attempt 2
+Attempt 3
+Response from https://canary.discordapp.com/api/webhooks/255306474312564736/avN725kHhe7PaOU9DpN-5LVZcOWl5FLowfpaY5OaDHd7AgYSKs76J6ZBwaiFDf7CoguP/bitbucket
+HTTP status: 404
+Elapsed time: 307ms
+Request time: a day ago (Monday, December 5th 2016, 1:46:04 pm)
+Headers
+X-RateLimit-Remaining	4
+Via	1.1 google
+Content-Encoding	gzip
+Transfer-Encoding	chunked
+Set-Cookie	__cfduid=dfc7b0f527f9f3c2c9fdba66f6070c6661480941964; expires=Tue, 05-Dec-17 12:46:04 GMT; path=/; domain=.discordapp.com; HttpOnly
+Strict-Transport-Security	max-age=31536000; includeSubDomains
+Server	cloudflare-nginx
+Connection	keep-alive
+X-RateLimit-Limit	5
+Date	Mon, 05 Dec 2016 12:46:04 GMT
+CF-RAY	30c7994dcade5e6a-TPA
+Alt-Svc	clear
+Content-Type	application/json
+X-RateLimit-Reset	1480941967
+Body
+{
+  "code": 10016,
+  "message": "Unknown Webhook Service"
+}
+Request
+Attempt type: Automatic retry
+Headers
+X-Request-UUID	c219436b-b901-44ea-b9bf-2fc18f6d9b69
+X-Event-Key	repo:push
+User-Agent	Bitbucket-Webhooks/2.0
+X-Attempt-Number	3
+X-Hook-UUID	18d35b8e-db01-44df-a5bd-60d818e2d786
+Content-Type	application/json
+Body
+Hide request body
+{
+  "push": {
+    "changes": [
+      {
+        "forced": false,
+        "old": {
+          "type": "branch",
+          "target": {
+            "hash": "7fbbb0e125be49fcca5a356c7213b0a2db8aea7a",
+            "links": {
+              "self": {
+                "href": "https://api.bitbucket.org/2.0/repositories/alexanderhems/dndbot/commit/7fbbb0e125be49fcca5a356c7213b0a2db8aea7a"
+              },
+              "html": {
+                "href": "https://bitbucket.org/alexanderhems/dndbot/commits/7fbbb0e125be49fcca5a356c7213b0a2db8aea7a"
+              }
+            },
+            "author": {
+              "raw": "Alexander Hems <ahems@dev5310.com>"
+            },
+            "parents": [
+              {
+                "hash": "5aae217f6196b5cb34258dc4f93e5cdf93921454",
+                "type": "commit",
+                "links": {
+                  "self": {
+                    "href": "https://api.bitbucket.org/2.0/repositories/alexanderhems/dndbot/commit/5aae217f6196b5cb34258dc4f93e5cdf93921454"
+                  },
+                  "html": {
+                    "href": "https://bitbucket.org/alexanderhems/dndbot/commits/5aae217f6196b5cb34258dc4f93e5cdf93921454"
+                  }
+                }
+              }
+            ],
+            "date": "2016-12-05T12:40:47+00:00",
+            "message": "webhook test 3\n",
+            "type": "commit"
+          },
+          "links": {
+            "commits": {
+              "href": "https://api.bitbucket.org/2.0/repositories/alexanderhems/dndbot/commits/master"
+            },
+            "self": {
+              "href": "https://api.bitbucket.org/2.0/repositories/alexanderhems/dndbot/refs/branches/master"
+            },
+            "html": {
+              "href": "https://bitbucket.org/alexanderhems/dndbot/branch/master"
+            }
+          },
+          "name": "master"
+        },
+        "links": {
+          "diff": {
+            "href": "https://api.bitbucket.org/2.0/repositories/alexanderhems/dndbot/diff/d173b220bfe3224336c93b1c7cf4e82516bb2981..7fbbb0e125be49fcca5a356c7213b0a2db8aea7a"
+          },
+          "html": {
+            "href": "https://bitbucket.org/alexanderhems/dndbot/branches/compare/d173b220bfe3224336c93b1c7cf4e82516bb2981..7fbbb0e125be49fcca5a356c7213b0a2db8aea7a"
+          },
+          "commits": {
+            "href": "https://api.bitbucket.org/2.0/repositories/alexanderhems/dndbot/commits?include=d173b220bfe3224336c93b1c7cf4e82516bb2981&exclude=7fbbb0e125be49fcca5a356c7213b0a2db8aea7a"
+          }
+        },
+        "created": false,
+        "commits": [
+          {
+            "hash": "d173b220bfe3224336c93b1c7cf4e82516bb2981",
+            "links": {
+              "self": {
+                "href": "https://api.bitbucket.org/2.0/repositories/alexanderhems/dndbot/commit/d173b220bfe3224336c93b1c7cf4e82516bb2981"
+              },
+              "comments": {
+                "href": "https://api.bitbucket.org/2.0/repositories/alexanderhems/dndbot/commit/d173b220bfe3224336c93b1c7cf4e82516bb2981/comments"
+              },
+              "patch": {
+                "href": "https://api.bitbucket.org/2.0/repositories/alexanderhems/dndbot/patch/d173b220bfe3224336c93b1c7cf4e82516bb2981"
+              },
+              "html": {
+                "href": "https://bitbucket.org/alexanderhems/dndbot/commits/d173b220bfe3224336c93b1c7cf4e82516bb2981"
+              },
+              "diff": {
+                "href": "https://api.bitbucket.org/2.0/repositories/alexanderhems/dndbot/diff/d173b220bfe3224336c93b1c7cf4e82516bb2981"
+              },
+              "approve": {
+                "href": "https://api.bitbucket.org/2.0/repositories/alexanderhems/dndbot/commit/d173b220bfe3224336c93b1c7cf4e82516bb2981/approve"
+              },
+              "statuses": {
+                "href": "https://api.bitbucket.org/2.0/repositories/alexanderhems/dndbot/commit/d173b220bfe3224336c93b1c7cf4e82516bb2981/statuses"
+              }
+            },
+            "author": {
+              "raw": "Alexander Hems <ahems@dev5310.com>"
+            },
+            "parents": [
+              {
+                "hash": "7fbbb0e125be49fcca5a356c7213b0a2db8aea7a",
+                "type": "commit",
+                "links": {
+                  "self": {
+                    "href": "https://api.bitbucket.org/2.0/repositories/alexanderhems/dndbot/commit/7fbbb0e125be49fcca5a356c7213b0a2db8aea7a"
+                  },
+                  "html": {
+                    "href": "https://bitbucket.org/alexanderhems/dndbot/commits/7fbbb0e125be49fcca5a356c7213b0a2db8aea7a"
+                  }
+                }
+              }
+            ],
+            "date": "2016-12-05T12:43:57+00:00",
+            "message": "webhook test 4\n",
+            "type": "commit"
+          }
+        ],
+        "truncated": false,
+        "closed": false,
+        "new": {
+          "type": "branch",
+          "target": {
+            "hash": "d173b220bfe3224336c93b1c7cf4e82516bb2981",
+            "links": {
+              "self": {
+                "href": "https://api.bitbucket.org/2.0/repositories/alexanderhems/dndbot/commit/d173b220bfe3224336c93b1c7cf4e82516bb2981"
+              },
+              "html": {
+                "href": "https://bitbucket.org/alexanderhems/dndbot/commits/d173b220bfe3224336c93b1c7cf4e82516bb2981"
+              }
+            },
+            "author": {
+              "raw": "Alexander Hems <ahems@dev5310.com>"
+            },
+            "parents": [
+              {
+                "hash": "7fbbb0e125be49fcca5a356c7213b0a2db8aea7a",
+                "type": "commit",
+                "links": {
+                  "self": {
+                    "href": "https://api.bitbucket.org/2.0/repositories/alexanderhems/dndbot/commit/7fbbb0e125be49fcca5a356c7213b0a2db8aea7a"
+                  },
+                  "html": {
+                    "href": "https://bitbucket.org/alexanderhems/dndbot/commits/7fbbb0e125be49fcca5a356c7213b0a2db8aea7a"
+                  }
+                }
+              }
+            ],
+            "date": "2016-12-05T12:43:57+00:00",
+            "message": "webhook test 4\n",
+            "type": "commit"
+          },
+          "links": {
+            "commits": {
+              "href": "https://api.bitbucket.org/2.0/repositories/alexanderhems/dndbot/commits/master"
+            },
+            "self": {
+              "href": "https://api.bitbucket.org/2.0/repositories/alexanderhems/dndbot/refs/branches/master"
+            },
+            "html": {
+              "href": "https://bitbucket.org/alexanderhems/dndbot/branch/master"
+            }
+          },
+          "name": "master"
+        }
+      }
+    ]
+  },
+  "repository": {
+    "website": "",
+    "scm": "git",
+    "uuid": "{162c33e0-ba54-4260-bf62-7ac4154c4a66}",
+    "links": {
+      "self": {
+        "href": "https://api.bitbucket.org/2.0/repositories/alexanderhems/dndbot"
+      },
+      "html": {
+        "href": "https://bitbucket.org/alexanderhems/dndbot"
+      },
+      "avatar": {
+        "href": "https://bitbucket.org/alexanderhems/dndbot/avatar/32/"
+      }
+    },
+    "full_name": "alexanderhems/dndbot",
+    "owner": {
+      "username": "alexanderhems",
+      "type": "user",
+      "display_name": "Alexander Hems",
+      "uuid": "{62de7f68-dd75-4a44-a85a-d6b03fcb9205}",
+      "links": {
+        "self": {
+          "href": "https://api.bitbucket.org/2.0/users/alexanderhems"
+        },
+        "html": {
+          "href": "https://bitbucket.org/alexanderhems/"
+        },
+        "avatar": {
+          "href": "https://bitbucket.org/account/alexanderhems/avatar/32/"
+        }
+      }
+    },
+    "type": "repository",
+    "is_private": true,
+    "name": "dndbot"
+  },
+  "actor": {
+    "username": "alexanderhems",
+    "type": "user",
+    "display_name": "Alexander Hems",
+    "uuid": "{62de7f68-dd75-4a44-a85a-d6b03fcb9205}",
+    "links": {
+      "self": {
+        "href": "https://api.bitbucket.org/2.0/users/alexanderhems"
+      },
+      "html": {
+        "href": "https://bitbucket.org/alexanderhems/"
+      },
+      "avatar": {
+        "href": "https://bitbucket.org/account/alexanderhems/avatar/32/"
+      }
+    }
+  }
+}
